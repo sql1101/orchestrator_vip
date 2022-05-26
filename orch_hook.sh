@@ -14,7 +14,9 @@ logfile="/var/log/orch_hook.log"
 clusternames=(rep blea lajos)
 
 # clustername=( interface IP user Inter_IP)
+# rep 为orchestrator上的集群名字(具体还没有测试)
 rep=( eth1 "192.168.56.121" orchuser "192.168.56.125")
+# clustername=( interface IP user Inter_IP)
 
 if [[ $isitdead == "DeadMaster" ]]; then
 
